@@ -2,6 +2,16 @@ const btns = document.querySelectorAll(".btn");
 const questions = document.querySelectorAll(".question-section");
 const answers = document.querySelectorAll(".answer");
 
+demo();
+function demo() {
+  const btn = document.querySelector(".btn");
+  const answer = document.querySelector(".answer");
+  btn.classList.remove("hidden");
+  btn.setAttribute("src", "./assets/images/icon-minus.svg");
+  btn.classList.add("shown");
+  answer.style.display = "block";
+}
+
 // click questions and buttons
 questions.forEach((question) => {
   question.addEventListener("click", (event) => {
