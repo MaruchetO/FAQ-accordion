@@ -3,6 +3,7 @@ const questions = document.querySelectorAll(".question-section");
 const answers = document.querySelectorAll(".answer");
 
 demo();
+
 function demo() {
   const btn = document.querySelector(".btn");
   const answer = document.querySelector(".answer");
